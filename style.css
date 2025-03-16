@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/fon.01.jpg');
+    max-width: 1240px;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.continer {
+   max-width: 1240px;
+    margin: auto;
+}
+
+ .header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: 65px;
+}
+.wrapper {
+    position: fixed; 
+    right: 0;
+    top: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-start; 
+   
+}
+.wrapper ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+  
+    height: 100%;
+}
+.profil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    padding: 6px;
+}
+.profil:hover img{
+    background-color: rgba(68, 118, 95, 0.573);
+}
+.wrapper ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+.wrapper ul li a i {
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.wrapper ul li:nth-child(1),
+.wrapper ul li:nth-child(2) {
+    margin: 0 7px;
+}
+
+.wrapper ul li:nth-child(1):hover a,
+.wrapper ul li:nth-child(2):hover a {
+    text-decoration: underline;
+}
+
+.wrapper ul li:nth-child(3):hover i,
+.wrapper ul li:nth-child(4):hover i{
+    background-color: rgba(68, 118, 95, 0.573);
+}
+
+
+.main {
+    height: calc(100vh - 65px );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.box h1 {
+    color: white;
+    font-size: 90px;
+
+
+}
+
+.google {
+    width: 700px;
+    height: 50px;
+    background-color: white;
+    border-radius: 27px;
+    box-shadow: 0px 0px 10px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+   
+   
+}
+input {
+    text-align: left; 
+    
+    padding: 10px 15px; 
+    outline: none;
+   
+    border: none; 
+  
+    font-size: 14px; 
+  }
+.saytlar{
+    width:900px ;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+.saytlar img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   background-color: white;
+}
+.saytlar p{
+    color: white;
+    font-size: 18px;
+}
+@media (max-width:960px)  {
+    body{
+        background-image: url('./images/fon.02.webp');
+        max-width: 960px;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .saytlar{
+        width: 600px;
+    }
+    .google{
+        width: 500px;
+    }
+}  
+@media (max-width:600px)  {
+    body{
+        background-image: url('./images/fon3.png');
+        max-width: 600px;
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .saytlar{
+        width: 400px;
+    }
+    .google{
+        width: 300px;
+    }
+    .box h1{
+        font-size: 50px;
+    }
+}  
